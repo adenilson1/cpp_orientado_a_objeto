@@ -11,9 +11,11 @@
 		"prefix": "main",
 		"body": [
 			"#include <iostream>",
+			"#include <Windows.h>",
 			"using namespace std;",
 			"",
 			"int main() {",
+			"SetConsoleOutputCP(65001);",
 			"    cout << $1 << endl;",
 			"    return 0;",
 			"}",
